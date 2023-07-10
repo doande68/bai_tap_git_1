@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="form-1">
+    <p>Ý nghĩa của form là cung cấp một cách cho người dùng tương tác với trang web và gửi thông tin đến máy chủ để
+        thực hiện các tác vụ như đăng ký, đăng nhập, tìm kiếm, gửi phản hồi, đặt hàng, v.v. </p>
+</div>
+<div class="form-2">
+    <p> Khi người dùng điền thông tin vào form và gửi nó đi, dữ liệu được gửi đến máy chủ thông qua phương thức HTTP
+        như POST hoặc GET. Máy chủ có thể xử lý dữ liệu được gửi và thực hiện các hành động tương ứng, chẳng hạn như
+        lưu thông tin người dùng, thực hiện tìm kiếm, xác thực người dùng.</p>
+</div>
+<div class="form-3">
+    <p>Có 2 thuộc tính cơ bản cần lưu ý</p>
+    <p>- Thuộc tính action mà method</p>
+    <p>Các loại input cơ bản</p>
+    <p>- Button</p>
+    <p>- CheckBox</p>
+    <p>- Email</p>
+
+</div>
+<div class="form-4">
+    <div class="form-5">
+        <h2>Thông tin cá nhân</h2>
+        <form id="myForm">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="pic">Ảnh đại diện:</label>
+            <input type="file" id="pic" name="pic" accept="image/*" required>
+
+            <label for="birthdate">Ngày sinh:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <button type="submit">Hiển thị thông tin</button>
+        </form>
+    </div>
+
+    <div class="result-1" id="resultContainer" style="display: none;">
+        <h2>Thông tin đã nhập</h2>
+        <p id="resultName"></p>
+        <p id="resultBirthdate"></p>
+        <img id="resultPic" width="200" height="200">
+    </div>
+</div>
+
+
+</script>
+</body>
+</html>
